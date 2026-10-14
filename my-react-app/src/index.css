@@ -1,0 +1,59 @@
+/* Global reset + design tokens */
+:root {
+  --ink: #2a2521;
+  --ink-soft: #5c5148;
+  --brown: #8a5a3b;
+  --cream: #f1e6d8;
+
+  --glass: rgba(255, 250, 244, 0.42);
+  --stroke: rgba(255, 255, 255, 0.6);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --gutter: clamp(16px, 2.4vw, 34px);
+  --rail: 104px; /* horizontal space reserved for the left sidebar */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: #d9cbb8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brown);
+  outline-offset: 3px;
+}
